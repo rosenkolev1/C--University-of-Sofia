@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Problem1</name>
+    </assembly>
+    <members>
+        <member name="T:Problem1.Account">
+            <summary>
+            Class Account represents account objects
+            </summary>
+        </member>
+        <member name="M:Problem1.Account.#ctor(Problem1.Account)">
+            <summary>
+            Copy-constructor
+            </summary>
+        </member>
+        <member name="M:Problem1.Account.Deposit(System.Decimal)">
+            <summary>
+            Adds amountToDeposit top balance
+            </summary>
+            <param name="amountToDeposit">Amount to Deposit</param>
+        </member>
+        <member name="M:Problem1.Account.Withdraw(System.Decimal)">
+            <summary>
+            Method to withdraw amount of cash
+            </summary>
+            <param name="amountToWithdraw"></param>
+            <returns>Current Balance</returns>
+        </member>
+        <member name="M:Problem1.Time.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Create time based on hours, minutes and seconds
+            </summary>
+            <param name="hours">Store hours value</param>
+            <param name="minutes">Store minutes value</param>
+            <param name="seconds">Store seconds value</param>
+        </member>
+    </members>
+</doc>
