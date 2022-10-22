@@ -5,7 +5,11 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorSample", "CalculatorSample.csproj", "{DC6F4350-08D7-4146-8A79-C18A37681027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadacha2", "..\Zadacha2\Zadacha2.csproj", "{4FBBB48E-F93F-4571-BFC2-F02CD65AEFEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadacha2", "..\Zadacha2\Zadacha2.csproj", "{4FBBB48E-F93F-4571-BFC2-F02CD65AEFEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadacha 3", "..\Zadacha 3\Zadacha 3.csproj", "{2813F238-55BB-4C74-A393-F2439A314888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadacha 4", "..\Zadacha 4\Zadacha 4.csproj", "{1C017717-C8DD-44AF-A45B-8575E0103B94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{4FBBB48E-F93F-4571-BFC2-F02CD65AEFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBBB48E-F93F-4571-BFC2-F02CD65AEFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBBB48E-F93F-4571-BFC2-F02CD65AEFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2813F238-55BB-4C74-A393-F2439A314888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2813F238-55BB-4C74-A393-F2439A314888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2813F238-55BB-4C74-A393-F2439A314888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2813F238-55BB-4C74-A393-F2439A314888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C017717-C8DD-44AF-A45B-8575E0103B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C017717-C8DD-44AF-A45B-8575E0103B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C017717-C8DD-44AF-A45B-8575E0103B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C017717-C8DD-44AF-A45B-8575E0103B94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
