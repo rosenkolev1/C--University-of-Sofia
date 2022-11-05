@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3b", "Lab3b\Lab3b.csproj", "{BD6C64AF-0289-4AD6-A046-9963C9C153BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckOfCards", "DeckOfCards\DeckOfCards.csproj", "{DA43FAC0-386A-4A96-956D-5AA9CBB88833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD6C64AF-0289-4AD6-A046-9963C9C153BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6C64AF-0289-4AD6-A046-9963C9C153BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6C64AF-0289-4AD6-A046-9963C9C153BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6C64AF-0289-4AD6-A046-9963C9C153BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA43FAC0-386A-4A96-956D-5AA9CBB88833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA43FAC0-386A-4A96-956D-5AA9CBB88833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA43FAC0-386A-4A96-956D-5AA9CBB88833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA43FAC0-386A-4A96-956D-5AA9CBB88833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2A6D129-F539-4F87-B06E-7B1225DB46BF}
+	EndGlobalSection
+EndGlobal
