@@ -1,0 +1,99 @@
+﻿<Window x:Class="Painter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Painter"
+        mc:Ignorable="d"
+        Title="Painter" Height="800" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="colorSlidersStyle" TargetType="Slider">
+            <Setter Property="Orientation" Value="Vertical" />
+            <Setter Property="Height" Value="180" />
+            <Setter Property="Width" Value="21" />
+        </Style>
+
+        <Style x:Key="buttonsStyle" TargetType="Button">
+            <Setter Property="Height" Value="23"></Setter>
+            <Setter Property="Width" Value="75"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"></Setter>
+                </Style>
+            </Style.Resources>
+        </Style>
+
+    </Window.Resources>
+    <!-- creates a Grid -->
+    <Grid>
+        <!-- defines columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- creates a Canvas -->
+        <Canvas Grid.Column="1" Margin="0" Name="paintCanvas" 
+         Background="White" MouseMove="paintCanvas_MouseMove"
+         MouseLeftButtonDown="paintCanvas_MouseLeftButtonDown" 
+         MouseLeftButtonUp="paintCanvas_MouseLeftButtonUp" 
+         MouseRightButtonDown="paintCanvas_MouseRightButtonDown"
+         MouseRightButtonUp="paintCanvas_MouseRightButtonUp"/>
+
+        <!-- creates a StackPanel-->
+        <StackPanel Margin="3">
+            <!-- creates a GroupBox for color options -->
+            <GroupBox Grid.ColumnSpan="1" Header="Color" Margin="3" 
+            HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical" Margin="3" HorizontalAlignment="Left" 
+               VerticalAlignment="Top">
+                    <StackPanel>
+                        <Canvas Margin="0, 0, 0, 10"  Height="75" Background="Black" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Slider Style="{StaticResource colorSlidersStyle}" />
+                        <Slider Style="{StaticResource colorSlidersStyle}" />
+                        <Slider Style="{StaticResource colorSlidersStyle}" />
+                        <Slider Style="{StaticResource colorSlidersStyle}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="R"></Label>
+                        <Label  Content="G" Padding="9,5,5,5" Grid.IsSharedSizeScope="True"/>
+                        <Label Content="B" Padding="9,5,5,5" Grid.IsSharedSizeScope="True"></Label>
+                        <Label Content="A" Padding="9,5,5,5"></Label>
+                    </StackPanel>
+                    <!-- creates RadioButtons for selecting color -->
+                    <!--
+                    <RadioButton Name="redRadioButton" Margin="3" 
+                  Checked="redRadioButton_Checked">Red</RadioButton>
+                    <RadioButton Name="blueRadioButton" Margin="3" 
+                  Checked="blueRadioButton_Checked">Blue</RadioButton>
+                    <RadioButton Name="greenRadioButton" Margin="3" 
+                  Checked="greenRadioButton_Checked">Green</RadioButton>
+                    <RadioButton Name="blackRadioButton" IsChecked="True"
+                  Checked="blackRadioButton_Checked" Margin="3">Black
+                    </RadioButton>-->
+                </StackPanel>
+            </GroupBox>
+            <!-- creates GroupBox for size options -->
+            <GroupBox Header="Size" Margin="3">
+                <StackPanel Margin="3">
+                    <RadioButton Name="smallRadioButton" Margin="3" 
+                  Checked="smallRadioButton_Checked" GroupName="u">Small</RadioButton>
+                    <RadioButton Name="mediumRadioButton" IsChecked="True"
+                  Checked="mediumRadioButton_Checked" Margin="3" GroupName="u">Medium
+                    </RadioButton>
+                    <RadioButton Name="largeRadioButton" Margin="3" GroupName="u"
+                  Checked="largeRadioButton_Checked">Large</RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+            <!-- creates a Button-->
+            <Button Style="{StaticResource buttonsStyle}" Name="undoButton" Click="undoButton_Click">Undo</Button>
+
+            <Button Style="{StaticResource buttonsStyle}" Name="clearButton" Click="clearButton_Click">Clear</Button>
+        </StackPanel>
+    </Grid>
+</Window>
