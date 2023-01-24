@@ -41,8 +41,8 @@ namespace AlarmClockApp
             this.ringAfter = 0;
             this.rand = new Random();
 
-            this.digitalClock.ClockStarted += OnClockStarted;
-            this.digitalClock.TimeUpdated += OnTimeUpdated;
+            //this.digitalClock.ClockStarted += OnClockStarted;
+            //this.digitalClock.TimeUpdated += OnTimeUpdated;
 
         }
 

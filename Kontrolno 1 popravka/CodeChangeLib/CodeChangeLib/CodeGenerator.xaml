@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="CodeChangeLib.CodeGenerator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CodeChangeLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="782">
+    <UserControl.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="Height" Value="24"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="Height" Value="24"></Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="32,0,197,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Name="generatorBox" FontSize="22"  HorizontalAlignment="Center" Margin="0,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="525" Height="31"/>
+        <Label FontWeight="Bold" FontSize="16" Content="Code Generator" HorizontalAlignment="Left" Margin="18,87,0,0" VerticalAlignment="Top" Width="133"/>
+        <Button Click="ButtonClearInput_Click" x:Name="buttonClearInput" FontSize="16" Content="Clear Input" HorizontalAlignment="Left" Margin="22,145,0,0" VerticalAlignment="Top" Height="35" Width="173"/>
+        <Button Click="ButtonQuit_Click" x:Name="buttonQuit" FontSize="16" Content="Quit" HorizontalAlignment="Left" Margin="300,145,0,0" VerticalAlignment="Top" Height="35" Width="189"/>
+        <Button Click="ButtonGenerateCode_Click" Name="buttonGenerateCode" FontSize="16" Content="Generate Random Code" HorizontalAlignment="Left" Margin="22,203,0,0" VerticalAlignment="Top" Height="35" Width="467"/>
+
+    </Grid>
+</UserControl>
